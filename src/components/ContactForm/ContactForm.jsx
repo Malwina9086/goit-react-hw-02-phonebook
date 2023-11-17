@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 import css from './ContactForm.module.css';
 
 class ContactForm extends Component {
-  static propTypes = {
-    onAddContact: PropTypes.func.isRequired,
-    contacts: PropTypes.array.isRequired,
-  };
-
   state = {
     name: '',
     number: '',
